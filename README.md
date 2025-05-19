@@ -5,7 +5,7 @@
 ## Highlights
 | Component | Description |
 |-----------|-------------|
-| VPC (2 AZ) | 1 public + 2 private subnets |
+| VPC (2 AZ) | 2 public + 2 private subnets |
 | ALB        | Routes `/api` to WebSocket backend |
 | NAT Instance | Replaces NAT Gateway to reduce cost |
 | VPC Endpoints | Connect to ECR, S3, Secrets Manager securely |
