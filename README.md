@@ -26,7 +26,11 @@ Zero downtime achieved using:
 - **Blue-green deployment** through GitHub Actions + SSM
 - Separate target groups for each EC2 pool
 - Health checks before swap
+  
+## ALB Road Map
 
 ![Architecture diagram](assets/Table1.png)
+
+## VPC Road Map
 
 ![Architecture diagram](assets/Table2.png)
