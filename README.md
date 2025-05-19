@@ -1,6 +1,8 @@
 # AI Prodigy – Production AWS Architecture
 
 ![Architecture diagram](assets/arch.png)
+![Architecture diagram](assets/Table1.png)
+![Architecture diagram](assets/Table2.png)
 
 ## Highlights
 | Component | Description |
