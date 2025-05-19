@@ -1,8 +1,6 @@
 # AI Prodigy – Production AWS Architecture
 
 ![Architecture diagram](assets/arch.png)
-![Architecture diagram](assets/Table1.png)
-![Architecture diagram](assets/Table2.png)
 
 ## Highlights
 | Component | Description |
@@ -29,6 +27,6 @@ Zero downtime achieved using:
 - Separate target groups for each EC2 pool
 - Health checks before swap
 
-## Next Steps
+![Architecture diagram](assets/Table1.png)
 
-See [ci-cd-pipeline](https://github.com/yourusername/ci-cd-pipeline) for the automation repo.
+![Architecture diagram](assets/Table2.png)
