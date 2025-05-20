@@ -35,7 +35,7 @@ Zero downtime achieved using:
   
 ## ALB Road Map
 
-![Architecture diagram](assets/Table1.png)
+![Architecture diagram](assets/Table1.jpeg)
 
 ## VPC Road Map
 
