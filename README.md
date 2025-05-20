@@ -23,9 +23,16 @@ We replaced a managed NAT Gateway (~$0.045/hr) with a `t3.micro` EC2 NAT instanc
 ## Uptime
 
 Zero downtime achieved using:
-- **Blue-green deployment** through GitHub Actions + SSM
-- Separate target groups for each EC2 pool
-- Health checks before swap
+  - **Multi-AZ ALB** distributing traffic across private-subnet EC2 instances.
+  - **Rolling updates via Auto Scaling:** each new instance boots with a  
+    cloud-init **user-data script** that  
+    1. pulls the correct Docker image from ECR,  
+    2. runs container-level health checks,  
+    3. registers with the ALB target group only after passing.
+  - ALB health checks drain old instances before termination, so no open
+    connections are dropped.
+  - Auto Scaling automatically replaces any unhealthy instance to keep
+    capacity steady without manual intervention.
   
 ## ALB Road Map
 
