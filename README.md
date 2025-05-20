@@ -24,8 +24,7 @@ We replaced a managed NAT Gateway (~$0.045/hr) with a `t3.micro` EC2 NAT instanc
 
 Zero downtime achieved using:
   - **Multi-AZ ALB** distributing traffic across private-subnet EC2 instances.
-  - **Rolling updates via Auto Scaling:** each new instance boots with a  
-    cloud-init **user-data script** that  
+  - **Rolling updates via Auto Scaling:** each new instance boots with a cloud-init **user-data script** that  
     1. pulls the correct Docker image from ECR,  
     2. runs container-level health checks,  
     3. registers with the ALB target group only after passing.
