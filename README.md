@@ -51,3 +51,7 @@ Zero downtime achieved using:
 | Jun 2025 | Releases automated with GitHub Actions → ECR → AWS CodeDeploy blue/green on EC2 |
 | Oct 2025 | Website migrated to **ECS Fargate**, with the infrastructure defined in **Terraform** (network, ALB, ECR, IAM, ECS service, and logging modules; S3 + DynamoDB remote state) |
 | Mar 2026 | Website moved to a **serverless** Terraform stack (CloudFront, API Gateway, Lambda, DynamoDB, Cognito), deployed by GitHub Actions running `terraform plan` / `apply` |
+
+### Current architecture (2026)
+
+![Serverless architecture and Terraform delivery pipeline](assets/serverless-cicd.png)
